@@ -69,3 +69,7 @@ const getRandomArrayElement = (array) => {
   return array[getRandomNum(0, array.length - 1, 0)];
 }
 
+const getRandomArrayLength = (array) => {
+  return array.slice(0, getRandomNum(1, array.length - 1))
+}
+
