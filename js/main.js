@@ -52,17 +52,16 @@ const GuestsCount = {
   MIN: 1,
   MAX: 10,
 }
+
+const getRandomNum = (min, max, numsAfterComma) => {
   if (min < 0 || max < 0) {
     return -1;
   }
 
   if (min > max) {
-    // let num = min;
-    // min = max;
-    // max = num;
-    // деструктуризация:
     [min, max] = [max, min];
   }
+
   return (Math.random() * (max - min) + min).toFixed(numsAfterComma);
 };
 
