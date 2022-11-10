@@ -73,3 +73,8 @@ const getRandomArrayLength = (array) => {
   return array.slice(0, getRandomNum(1, array.length - 1))
 }
 
+const Location = {
+  X: +getRandomNum(LatitudeInterval.MIN, LatitudeInterval.MAX, 5),
+  Y: +getRandomNum(LongitudeInterval.MIN, LongitudeInterval.MAX, 5),
+}
+
