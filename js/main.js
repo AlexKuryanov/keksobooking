@@ -65,4 +65,7 @@ const getRandomNum = (min, max, numsAfterComma) => {
   return (Math.random() * (max - min) + min).toFixed(numsAfterComma);
 };
 
-console.log(getRandomCoordinate(0, 0.2, 3));
+const getRandomArrayElement = (array) => {
+  return array[getRandomNum(0, array.length - 1, 0)];
+}
+
